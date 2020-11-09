@@ -1,0 +1,27 @@
+// We are importing the blueprint source scss files so that we can override the fonts and variables.
+// The ordering of these imports are very important.
+
+@import "~normalize.css/normalize.css";
+@import "~antd/dist/antd.css";
+@import "~bulma-scss/bulma.scss";
+//#region Blueprint
+// This mostly mirrors the structure of the `~@blueprintjs/core/src/blueprint.scss` file.
+
+@import "./fonts";
+@import './reset';
+@import "variables"; // Variable overrides
+//#endregion Blueprint
+
+//MOVE TO OVERRIDES
+.ant-dropdown-menu-dark, .ant-dropdown-menu-dark .ant-dropdown-menu {
+    background: #27282b;
+    border-radius: 8px;
+    width: 125px;
+    box-shadow: 0 4px 12px #000000bd;
+}
+
+// @import './icons';
+@import './main';
+@import './form';
+// @import './editor';
+// @import './table';

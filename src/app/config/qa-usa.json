@@ -1,0 +1,6 @@
+{
+  "name": "qa-usa",
+  "dataUrl": "https://phx4-dpms-api-qa-usa.azurewebsites.net/v1.0/",
+  "authUrl": "https://ssoqa.carestreamdental.com/",
+  "disableLoginBanner": true
+}

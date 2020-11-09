@@ -1,0 +1,51 @@
+@import "colors";
+
+form {
+    label {
+        display: block;
+        margin: 0 0 10px;
+        color: $gray;
+        font-size: 12px;
+        font-weight: $semibold;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+
+    input {
+        outline: none;
+        display: block;
+        background: rgba($black, 0.1);
+        width: 100%;
+        border: 0;
+        border-radius: 30px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        color: $gray;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: $semibold;
+        line-height: inherit;
+        transition: 0.3s ease;
+
+        &:focus {
+            color: $dark-gray;
+        }
+    }
+
+    button {
+        outline: none;
+        background: $accent;
+        width: 100%;
+        border: 0;
+        border-radius: 30px;
+        padding: 12px 20px;
+        color: $white;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: $semibold;
+        line-height: inherit;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

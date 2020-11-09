@@ -1,0 +1,12 @@
+{
+  "name": "unstable-main",
+  "dataUrl": "https://phx4-dpms-api-unstable-main.azurewebsites.net/v1.0/",
+  "authUrl": "https://ssoqa.carestreamdental.com/",
+  "showDemoPages": false,
+  "disableLoginBanner": true,
+  "overrideWebViewsMode": true,
+  "azureAppInsights": {
+    "enabled": false,
+    "key": "441ef404-e8eb-42d9-acea-606d45f2d7a4"
+  }
+}

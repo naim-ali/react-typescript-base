@@ -1,0 +1,133 @@
+
+html,
+body,
+#root {
+  @media screen {
+    height: 100vh;
+    min-width: 1366px;
+  }
+
+  .app {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+ 
+
+    header {
+      flex: 0 1 auto;
+    }
+
+    .navigation {
+      flex: 0 1 auto;
+    }
+
+    .frame {
+      display: flex;
+      flex-flow: column;
+      //height: 100%;
+      flex: 1; //Fill .app
+      overflow-y: auto; //allow scroll
+
+      .page-frame {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+
+        .banner {
+          flex: 0 0 auto;
+          //height: $banner-height;
+          display: flex;
+          border-bottom: 1px solid gray;
+        }
+
+        .main {
+          display: flex;
+          flex: 1;
+          overflow-y: hidden;
+
+          .actions {
+            width: $actions-width;
+            min-width: $actions-width;
+            padding: 0;
+            border-right: 1px solid gray;
+            display: flex;
+
+            .actions-body {
+              overflow-y: auto;
+              width: 100%;
+              padding: 10px;
+            }
+          }
+
+          .content {
+            display: flex;
+            flex: 1 1 auto;
+            overflow-y: hidden;
+            max-height: 100%;
+
+            .content-container {
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin ellipse() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.ellipse {
+  max-width: 200px;
+
+  @include ellipse();
+}
+
+.ellipse-no-max {
+  @include ellipse();
+}
+
+.ellipse-fill {
+  max-width: 100%;
+
+  @include ellipse();
+}
+
+///Used to change the search results highlighting
+.highlightable {
+  em {
+    color: orangered;
+    font-style: normal;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+.bp-border {
+  box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.15), inset 0 1px 1px rgba(16, 22, 26, 0.2);
+}
+
+.flex-scrollable {
+  overflow-y: hidden;
+}

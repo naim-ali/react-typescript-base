@@ -1,0 +1,18 @@
+// Had to create this file so that we could override the blueprint fonts with OpenSans.
+// The OpenSans.scss contains the font faces while the variables.scss file contains the
+// override of the blueprint font variable so that the correct faces get assigned.
+
+
+@import "OpenSans";
+// Font Family
+$body-font: "Roboto";
+
+// Font Weights
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 500;
+$bold: 700;
+$ultra: 800;
+
+$icon-font-formats: eot woff ttf !default;

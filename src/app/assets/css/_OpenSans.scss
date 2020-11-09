@@ -1,0 +1,37 @@
+
+@mixin font-props($fontWeight, $fontStyle) {
+  font-family: "Open Sans";
+  font-weight: $fontWeight;
+  font-style: $fontStyle;
+}
+
+@mixin open-sans($name, $fontWeight: null, $fontStyle: null) {
+
+  @font-face {
+    @include font-props($fontWeight, $fontStyle);
+
+    src: url('../fonts/OpenSans/#{$name}.ttf');
+    font-display: swap;
+  }
+
+  // Delare a class that uses the above font-face.
+  // This is used by the `PrintHelper.tsx` component.
+  .font-#{$name} {
+    @include font-props($fontWeight, $fontStyle);
+  }
+}
+
+@include open-sans('Light', 200);
+@include open-sans('LightItalic', 200, italic);
+
+@include open-sans('Regular');
+@include open-sans('Italic', null, italic);
+
+@include open-sans('Semibold', 600);
+@include open-sans('SemiboldItalic', 600, italic);
+
+@include open-sans('Bold', 700);
+@include open-sans('BoldItalic', 700, italic);
+
+@include open-sans('ExtraBold', 800);
+@include open-sans('ExtraBoldItalic', 800, italic);

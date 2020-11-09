@@ -1,0 +1,15 @@
+
+$actions-width: 300px;
+$standard-padding: 10px;
+$banner-height: 80px;
+
+// Blueprint variable overrides to customize blueprint styling.
+$pt-icon-size-small: 10px !default;
+
+$pt-font-family: "Open Sans";
+$secondary-tab-background-color: #444;
+$output-bourbon-deprecation-warnings: false;
+
+body {
+  font-family: $pt-font-family;
+}

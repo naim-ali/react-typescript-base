@@ -1,0 +1,27 @@
+
+h4 {
+  display: inline-block;
+  line-height: 1.3em;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow: hidden;
+}
+
+@media print {
+  body {
+    overflow: visible;
+  }
+}
+
+

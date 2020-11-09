@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "rootDir": "src",
+  // "compilerOptions": {
+  //   "allowSyntheticDefaultImports": true
+  // },
+  "exclude": [ "node_modules" ],
+  "include": ["src/app", "src/test"]
+}

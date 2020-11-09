@@ -1,0 +1,10 @@
+{
+  "name": "prod",
+  "dataUrl": "https://phx4-api-prod.azurewebsites.net/v1.0/",
+  "authUrl": "https://ssoqa.carestreamdental.com/",
+  "disableLoginBanner": true,
+  "azureAppInsights": {
+    "enabled": true,
+    "key": "3c676c09-6d8c-42f8-b45a-ec27a2cdb890"
+  }
+}

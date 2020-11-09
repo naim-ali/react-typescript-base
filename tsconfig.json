@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es6",
+      "dom.iterable",
+      "scripthost",
+      "es2017.object",
+      "esnext.asynciterable",
+      "es2018.promise"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noLib": false,
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "listFiles": false,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customMatcher": "\\.m\\.scss$",
+        }
+      }
+    ],
+    "pretty": true,
+    "outDir": "dist/ts2js",
+    "declaration": false,
+    "forceConsistentCasingInFileNames": true,
+    "alwaysStrict": true,
+    "strictNullChecks" : true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true, //to be replaced with "esModuleInterop": true
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "allowJs": true
+  },
+
+  "include": [
+    "src"
+  ]
+
+}
+

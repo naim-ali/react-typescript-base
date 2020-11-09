@@ -1,0 +1,26 @@
+.rdw-colorpicker-wrapper {
+  .rdw-colorpicker-modal {
+    width: 228px;
+    height: 180px;
+    z-index: 1000;
+  }
+
+  .rdw-colorpicker-modal-options {
+    overflow: visible;
+  }
+
+  .rdw-colorpicker-modal-header {
+    display: none;
+  }
+}
+
+.rdw-editor-toolbar {
+  .rdw-option-wrapper {
+    height: 30px;
+    box-shadow: none;
+
+    &.rdw-colorpicker-option-active {
+      box-shadow: 0 0 2px 2px #bfbdbd;
+    }
+  }
+}
